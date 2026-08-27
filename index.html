@@ -3,49 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Universe PRO</title>
+  <title>AI Universe - Free & PRO Prompts</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
-    body { background-color: #0f172a; color: #f8fafc; display: flex; flex-direction: column; min-height: 100vh; padding: 20px; align-items: center; justify-content: center; }
-    .card { background: #1e293b; border: 1px solid #334155; border-radius: 16px; max-width: 450px; width: 100%; padding: 28px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-    .badge { background: #22c55e; color: #000; font-weight: 700; font-size: 12px; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; display: inline-block; margin-bottom: 16px; }
-    h1 { font-size: 26px; margin-bottom: 10px; color: #fff; }
-    p { color: #94a3b8; font-size: 14px; line-height: 1.6; margin-bottom: 24px; }
-    .features { text-align: left; margin-bottom: 28px; }
-    .feature-item { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 15px; color: #e2e8f0; }
-    .price-box { margin-bottom: 24px; }
-    .old-price { text-decoration: line-through; color: #64748b; font-size: 18px; margin-right: 8px; }
-    .new-price { font-size: 36px; font-weight: 800; color: #38bdf8; }
-    .btn { display: block; width: 100%; background: linear-gradient(135deg, #00C853, #64DD17); color: #000; padding: 16px; border-radius: 12px; font-weight: 800; font-size: 16px; text-decoration: none; text-align: center; box-shadow: 0 4px 15px rgba(0,200,83,0.3); transition: transform 0.2s; }
-    .btn:active { transform: scale(0.98); }
-    .footer { margin-top: 16px; font-size: 12px; color: #64748b; }
+    body { background-color: #0b0f19; color: #f8fafc; padding: 16px; display: flex; flex-direction: column; align-items: center; }
+    .container { max-width: 500px; width: 100%; }
+    .header { text-align: center; margin: 20px 0; }
+    .header h1 { font-size: 24px; color: #38bdf8; }
+    .header p { color: #94a3b8; font-size: 13px; margin-top: 4px; }
+    .section-title { font-size: 16px; font-weight: 700; margin: 20px 0 10px; color: #a5b4fc; }
+    .prompt-card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 14px; margin-bottom: 12px; }
+    .prompt-title { font-size: 14px; font-weight: 600; color: #f1f5f9; margin-bottom: 6px; }
+    .prompt-text { font-size: 12px; color: #94a3b8; line-height: 1.4; background: #0f172a; padding: 8px; border-radius: 6px; margin-bottom: 10px; }
+    .copy-btn { background: #3b82f6; color: #fff; border: none; padding: 6px 14px; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; }
+    .pro-banner { background: linear-gradient(145deg, #1e1b4b, #312e81); border: 2px solid #6366f1; border-radius: 16px; padding: 20px; text-align: center; margin-top: 24px; box-shadow: 0 10px 25px rgba(99, 102, 241, 0.2); }
+    .pro-badge { background: #22c55e; color: #000; font-weight: 800; font-size: 11px; padding: 3px 10px; border-radius: 12px; text-transform: uppercase; display: inline-block; margin-bottom: 8px; }
+    .pro-price { font-size: 28px; font-weight: 800; color: #38bdf8; margin: 10px 0; }
+    .old-price { text-decoration: line-through; color: #94a3b8; font-size: 16px; }
+    .pro-btn { display: block; width: 100%; background: linear-gradient(135deg, #00C853, #64DD17); color: #000; padding: 14px; border-radius: 10px; font-weight: 800; font-size: 15px; text-decoration: none; margin-top: 12px; }
+    .support-btn { display: block; width: 100%; background: #25D366; color: #fff; padding: 10px; border-radius: 10px; font-weight: 700; font-size: 13px; text-decoration: none; margin-top: 8px; }
   </style>
 </head>
 <body>
 
-  <div class="card">
-    <div class="badge">Special Launch Offer</div>
-    <h1>AI Universe PRO</h1>
-    <p>Get instant access to 3000+ viral prompts, AI video tools & creator scripts.</p>
-
-    <div class="features">
-      <div class="feature-item">⚡ 3000+ Photorealistic AI Prompts</div>
-      <div class="feature-item">🎬 Viral Video Scripts & Hooks</div>
-      <div class="feature-item">🚀 Lifetime Updates & Access</div>
-      <div class="feature-item">📱 Instant PhonePe / UPI Payment</div>
+  <div class="container">
+    <div class="header">
+      <h1>🌌 AI Universe Hub</h1>
+      <p>Free Viral AI Prompts & Video Ideas</p>
     </div>
 
-    <div class="price-box">
-      <span class="old-price">₹499</span>
-      <span class="new-price">₹99</span>
+    <div class="section-title">🎁 Free Viral Prompts</div>
+
+    <div class="prompt-card">
+      <div class="prompt-title">📸 3D Cinematic Portrait</div>
+      <div class="prompt-text" id="p1">Hyper-realistic 8k portrait of an Indian creator in a futuristic neon gaming studio, 35mm lens, soft cinematic lighting, ultra-detailed.</div>
+      <button class="copy-btn" onclick="copyText('p1')">📋 Copy Prompt</button>
     </div>
 
-    <a href="upi://pay?pa=8500550495@ybl&pn=AI%20Universe%20PRO&am=99&cu=INR&tn=Unlock%20PRO%20Features" class="btn">
-      ⚡ UNLOCK NOW @ ₹99
-    </a>
+    <div class="prompt-card">
+      <div class="prompt-title">🦁 3D Pixar Animation Character</div>
+      <div class="prompt-text" id="p2">Cute 3D Pixar Disney style baby lion wearing chef hat in a colorful modern kitchen, 8k resolution, vibrant colors, unreal engine 5 render.</div>
+      <button class="copy-btn" onclick="copyText('p2')">📋 Copy Prompt</button>
+    </div>
 
-    <div class="footer">Instant activation via PhonePe / GPay / Paytm</div>
+    <div class="prompt-card">
+      <div class="prompt-title">🎬 Viral YouTube Shorts Script Hook</div>
+      <div class="prompt-text" id="p3">"99% of creators don't know this hidden AI tool that creates full videos in 30 seconds..." (Hook + Problem + 3 Bullet Solutions).</div>
+      <button class="copy-btn" onclick="copyText('p3')">📋 Copy Script</button>
+    </div>
+
+    <!-- PRO SECTION -->
+    <div class="pro-banner">
+      <span class="pro-badge">🔥 Unlock Everything</span>
+      <h2 style="font-size: 18px; margin-top: 4px;">AI Universe PRO</h2>
+      <p style="font-size: 12px; color: #cbd5e1; margin-top: 4px;">Get 3000+ Secret Viral Prompts, Face-Swap Tools & Video Scripts</p>
+      
+      <div class="pro-price"><span class="old-price">₹499</span> ₹99</div>
+
+      <a href="upi://pay?pa=8500550495@ybl&pn=AI%20Universe%20PRO&am=99&cu=INR&tn=Unlock%20PRO%20Features" class="pro-btn">
+        ⚡ UNLOCK ALL 3000+ PROMPTS @ ₹99
+      </a>
+
+      <a href="https://wa.me/918500550495?text=Bhai%20maine%2099%20pay%20kar%20diya%20hai,%20PRO%20access%20do" class="support-btn">
+        💬 Paid? Send Screenshot on WhatsApp
+      </a>
+    </div>
   </div>
+
+  <script>
+    function copyText(id) {
+      var text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text);
+      alert("Prompt Copied to Clipboard! ✅");
+    }
+  </script>
 
 </body>
 </html>
